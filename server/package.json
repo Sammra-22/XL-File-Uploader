@@ -1,0 +1,20 @@
+{
+  "name": "xl-file-uploader-backend",
+  "version": "1.0.0",
+  "title": "XL File Uploader backend server - Node.js",
+  "description": "Node.js implementation of a file upload handler for XL File Upload.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:eswitchtv/xl-file-uploader.git"
+  },
+  "private": true,
+  "dependencies": {
+    "formidable": ">=1.0.11",
+    "node-static": ">=0.6.5",
+    "imagemagick": ">=0.1.3"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
