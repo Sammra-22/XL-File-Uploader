@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  uploader:
+    container_name: uploader
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./server/public:/app/server/public
+    ports:
+      - "80:80"
+    environment:
+      SITE_USER: admin
+      SITE_PASSWORD: admin!1234
+      SITE_TITLE: "XL File Uploader"
+      SITE_DESCRIPTION: "Select or Drag and drop a file onto the page and then start uploading."
